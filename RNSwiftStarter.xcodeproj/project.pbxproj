@@ -13,6 +13,10 @@
 		942CDB591E22B5C00085CBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942CDB571E22B5C00085CBE2 /* Main.storyboard */; };
 		942CDB5B1E22B5C00085CBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942CDB5A1E22B5C00085CBE2 /* Assets.xcassets */; };
 		942CDB5E1E22B5C00085CBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942CDB5C1E22B5C00085CBE2 /* LaunchScreen.storyboard */; };
+		942CDB691E22C6E60085CBE2 /* ReactModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CDB681E22C6E60085CBE2 /* ReactModule.swift */; };
+		942CDB6C1E22C8660085CBE2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CDB6B1E22C8660085CBE2 /* Logger.swift */; };
+		942CDB6E1E22C9DB0085CBE2 /* LoggerModuleBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 942CDB6D1E22C9DB0085CBE2 /* LoggerModuleBridge.m */; };
+		942CDB701E22CCAC0085CBE2 /* ReactViewInstantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CDB6F1E22CCAC0085CBE2 /* ReactViewInstantiate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		942CDB5A1E22B5C00085CBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		942CDB5D1E22B5C00085CBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		942CDB5F1E22B5C00085CBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		942CDB681E22C6E60085CBE2 /* ReactModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactModule.swift; sourceTree = "<group>"; };
+		942CDB6B1E22C8660085CBE2 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		942CDB6D1E22C9DB0085CBE2 /* LoggerModuleBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerModuleBridge.m; sourceTree = "<group>"; };
+		942CDB6F1E22CCAC0085CBE2 /* ReactViewInstantiate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactViewInstantiate.swift; sourceTree = "<group>"; };
 		D25F87A286CEBD57C1402B2E /* Pods_RNSwiftStarter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNSwiftStarter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,6 +77,7 @@
 		942CDB521E22B5C00085CBE2 /* RNSwiftStarter */ = {
 			isa = PBXGroup;
 			children = (
+				942CDB671E22C6B90085CBE2 /* ReactNative */,
 				942CDB531E22B5C00085CBE2 /* AppDelegate.swift */,
 				942CDB551E22B5C00085CBE2 /* ViewController.swift */,
 				942CDB571E22B5C00085CBE2 /* Main.storyboard */,
@@ -77,6 +86,25 @@
 				942CDB5F1E22B5C00085CBE2 /* Info.plist */,
 			);
 			path = RNSwiftStarter;
+			sourceTree = "<group>";
+		};
+		942CDB671E22C6B90085CBE2 /* ReactNative */ = {
+			isa = PBXGroup;
+			children = (
+				942CDB6A1E22C8540085CBE2 /* Logger */,
+				942CDB681E22C6E60085CBE2 /* ReactModule.swift */,
+				942CDB6F1E22CCAC0085CBE2 /* ReactViewInstantiate.swift */,
+			);
+			path = ReactNative;
+			sourceTree = "<group>";
+		};
+		942CDB6A1E22C8540085CBE2 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				942CDB6D1E22C9DB0085CBE2 /* LoggerModuleBridge.m */,
+				942CDB6B1E22C8660085CBE2 /* Logger.swift */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 		E853CD9B1E9CDC825CCA2EBF /* Pods */ = {
@@ -123,6 +151,7 @@
 				TargetAttributes = {
 					942CDB4F1E22B5C00085CBE2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -211,8 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942CDB691E22C6E60085CBE2 /* ReactModule.swift in Sources */,
+				942CDB701E22CCAC0085CBE2 /* ReactViewInstantiate.swift in Sources */,
 				942CDB561E22B5C00085CBE2 /* ViewController.swift in Sources */,
 				942CDB541E22B5C00085CBE2 /* AppDelegate.swift in Sources */,
+				942CDB6C1E22C8660085CBE2 /* Logger.swift in Sources */,
+				942CDB6E1E22C9DB0085CBE2 /* LoggerModuleBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,10 +369,12 @@
 			baseConfigurationReference = 8F3E0DCBF250B757FAF28EA2 /* Pods-RNSwiftStarter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RNSwiftStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beast.RNSwiftStarter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -349,6 +384,7 @@
 			baseConfigurationReference = 81A79EDC9DB9A3071CEA38A1 /* Pods-RNSwiftStarter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RNSwiftStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beast.RNSwiftStarter;
@@ -376,6 +412,7 @@
 				942CDB641E22B5C00085CBE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

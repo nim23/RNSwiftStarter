@@ -7,19 +7,15 @@
 //
 
 import UIKit
+import React
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ReactViewInstantiate {
 
+    var reactView: RCTRootView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.instantiateReactView(view: "App", props: nil)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
