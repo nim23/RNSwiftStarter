@@ -1,0 +1,11 @@
+{
+  "name": "RNSwiftStarter",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react-native": "0.38.0"
+  }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		115F6B84E44551ECAEEF8AC3 /* Pods_RNSwiftStarter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25F87A286CEBD57C1402B2E /* Pods_RNSwiftStarter.framework */; };
 		942CDB541E22B5C00085CBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CDB531E22B5C00085CBE2 /* AppDelegate.swift */; };
 		942CDB561E22B5C00085CBE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CDB551E22B5C00085CBE2 /* ViewController.swift */; };
 		942CDB591E22B5C00085CBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942CDB571E22B5C00085CBE2 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81A79EDC9DB9A3071CEA38A1 /* Pods-RNSwiftStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiftStarter.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNSwiftStarter/Pods-RNSwiftStarter.release.xcconfig"; sourceTree = "<group>"; };
+		8F3E0DCBF250B757FAF28EA2 /* Pods-RNSwiftStarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiftStarter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNSwiftStarter/Pods-RNSwiftStarter.debug.xcconfig"; sourceTree = "<group>"; };
 		942CDB501E22B5C00085CBE2 /* RNSwiftStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNSwiftStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		942CDB531E22B5C00085CBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		942CDB551E22B5C00085CBE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		942CDB5A1E22B5C00085CBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		942CDB5D1E22B5C00085CBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		942CDB5F1E22B5C00085CBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25F87A286CEBD57C1402B2E /* Pods_RNSwiftStarter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNSwiftStarter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115F6B84E44551ECAEEF8AC3 /* Pods_RNSwiftStarter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5558FC0B36AB885411A51535 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D25F87A286CEBD57C1402B2E /* Pods_RNSwiftStarter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		942CDB471E22B5BF0085CBE2 = {
 			isa = PBXGroup;
 			children = (
 				942CDB521E22B5C00085CBE2 /* RNSwiftStarter */,
 				942CDB511E22B5C00085CBE2 /* Products */,
+				E853CD9B1E9CDC825CCA2EBF /* Pods */,
+				5558FC0B36AB885411A51535 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = RNSwiftStarter;
 			sourceTree = "<group>";
 		};
+		E853CD9B1E9CDC825CCA2EBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F3E0DCBF250B757FAF28EA2 /* Pods-RNSwiftStarter.debug.xcconfig */,
+				81A79EDC9DB9A3071CEA38A1 /* Pods-RNSwiftStarter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 942CDB621E22B5C00085CBE2 /* Build configuration list for PBXNativeTarget "RNSwiftStarter" */;
 			buildPhases = (
+				FA3D83DF1AFE4E1A6DBE577B /* [CP] Check Pods Manifest.lock */,
 				942CDB4C1E22B5C00085CBE2 /* Sources */,
 				942CDB4D1E22B5C00085CBE2 /* Frameworks */,
 				942CDB4E1E22B5C00085CBE2 /* Resources */,
+				5C358E9C9D5A86E195B9E49E /* [CP] Embed Pods Frameworks */,
+				33ABB5544563F05E7638ADFB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33ABB5544563F05E7638ADFB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNSwiftStarter/Pods-RNSwiftStarter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C358E9C9D5A86E195B9E49E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNSwiftStarter/Pods-RNSwiftStarter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA3D83DF1AFE4E1A6DBE577B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		942CDB4C1E22B5C00085CBE2 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		942CDB631E22B5C00085CBE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F3E0DCBF250B757FAF28EA2 /* Pods-RNSwiftStarter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RNSwiftStarter/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		942CDB641E22B5C00085CBE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A79EDC9DB9A3071CEA38A1 /* Pods-RNSwiftStarter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RNSwiftStarter/Info.plist;
